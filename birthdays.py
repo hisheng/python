@@ -17,3 +17,9 @@ while True :
         bday = input()
         birthdays[name] = bday
         print ('hava add ' + name)
+
+for k in birthdays.keys() :
+    print (k)
+
+for i in birthdays.items() :
+    print (i)
