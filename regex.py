@@ -38,3 +38,22 @@ nongreedyHaRegex = re.compile(r'(Ha){3,5}?') #花括号的“ 非贪心” 版�
 
 mo2 = nongreedyHaRegex.search('HaHaHaHaHa')
 mo2.group() #'HaHaHa
+
+xmasRegex = re.compile(r'\d+\s\w+')
+m = xmasRegex.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+print (m)
+
+
+voweRegex = re.compile(r'[aeiouAEIOU]')
+m1 = voweRegex.findall('RoboCop eats baby food. BABY FOOD.')
+print (m1)
+
+
+beginsWithHello = re.compile(r'^Hello') # ^ 开始符号  $ 结束符合
+b = beginsWithHello.search('Hello world!')
+print (b)
+print (b.group())
+bn = beginsWithHello.search('He said hello.')
+print (bn)
+
+# . 点符号 通配符合，匹配除了换行之外的 所有 单个字符

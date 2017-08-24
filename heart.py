@@ -9,12 +9,14 @@ grid = [
     ['.', 'O', 'O', '.', '.', '.'],
     ['.', '.', '.', '.', '.', '.']
 ]
-heart = [
-    [],[],[],[],[],[]
-]
-for s in grid :
-    for i in range(len(s)):
-        heart[i] = heart[i] + s[i]
 
-print(heart)
+arr = []
+
+for s in  range(len(grid)):
+     for i in range(len(grid[s])) :
+         print ('is:' + str(i) + str(s))
+         #arr[i][s] = grid[s][i]
+
+
+
 
