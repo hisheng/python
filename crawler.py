@@ -14,11 +14,11 @@ def getUrl(body):
     a = body.find('href=')
     if a == -1 :
         return None,0
-    print (a)
+   # print (a)
     first = body[a :].find('"')
-    print (first)
+    #print (first)
     second = body[a+first+1 :].find('"')
-    print (second)
+    #print (second)
     url = body[a + first + 1: a +second+first+1]
     return  url,a +second+first+1
 
